@@ -1,8 +1,11 @@
 import { Routes } from '@angular/router';
 import { DatePage } from './pages/date/date.page';
+import { OrdersPage } from './pages/orders/orders.page';
 import { ProductsPage } from './pages/products/products.page';
 import { UsersPage } from './pages/users/users.page';
+import { TicketsPage } from './pages/tickets/tickets.page';
 
+import { ProvidersPage } from './pages/providers/providers.page';
 /**
  * Definición de las rutas principales de la aplicación.
  *
@@ -17,6 +20,9 @@ import { UsersPage } from './pages/users/users.page';
  *
  * @see {@link UsersPage}
  * @see {@link ProductsPage}
+ * @see {@link OrdersPage}
+ * @see {@link TicketsPage}
+ * @see {@link ProvidersPage}
  */
 export const routes: Routes = [
 
@@ -39,6 +45,25 @@ export const routes: Routes = [
   { path: 'products', component: ProductsPage },
 
   /**
+   * Ruta de órdenes.
+   *
+   * @remarks
+   * Renderiza el componente `OrdersPage`, encargado
+   * de mostrar y gestionar el listado de órdenes.
+   */
+  { path: 'orders', component: OrdersPage },
+
+
+  /**
+   * Ruta de proveedores.
+   *
+   * @remarks
+   * Renderiza el componente `ProvidersPage`, encargado
+   * de mostrar y gestionar el listado de proveedores.
+   */
+  { path: 'providers', component: ProvidersPage },
+
+  /**
    * Ruta de la fecha.
    *
    * @remarks
@@ -46,6 +71,15 @@ export const routes: Routes = [
    * de mostrar la fecha actual del sistema.
    */
   { path: 'date', component: DatePage },
+
+  /**
+   * Ruta de tickets.
+   *
+   * @remarks
+   * Renderiza el componente `TicketsPage`, encargado
+   * de mostrar y gestionar el listado de incidencias/tickets.
+   */
+  { path: 'tickets', component: TicketsPage },
 
   /**
    * Ruta comodín.
